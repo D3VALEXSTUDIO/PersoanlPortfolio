@@ -1,7 +1,6 @@
 /* ----------------------------------------- */
 /* GLOBAL STYLE — BUBBLY + CLOUDY THEME */
 /* ----------------------------------------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -38,11 +37,10 @@ body {
 /* ----------------------------------------- */
 /* HERO SECTION */
 /* ----------------------------------------- */
-
 .hero {
     padding: 100px 20px;
     text-align: center;
-    background: radial-gradient(circle at top, #ffffff, #d3C467B);
+    background: radial-gradient(circle at top, #ffffff, #cbd3ff);
     border-bottom: 4px solid #c2e6ff;
     position: relative;
 }
@@ -77,7 +75,6 @@ body {
     transition: 0.2s;
     box-shadow: 0 3px 10px rgba(134,199,255,0.4);
 }
-
 .btn:hover {
     background: #5ab4ff;
     transform: translateY(-2px);
@@ -86,7 +83,6 @@ body {
 /* ----------------------------------------- */
 /* PAGE LAYOUT */
 /* ----------------------------------------- */
-
 .page-layout {
     display: flex;
     width: 90%;
@@ -98,6 +94,7 @@ body {
     flex: 3;
 }
 
+/* SIDEBAR — NOW ONLY CONTACT BOX */
 .sidebar {
     flex: 1.4;
     display: flex;
@@ -108,7 +105,6 @@ body {
 /* ----------------------------------------- */
 /* SECTION STYLES (BUBBLY CARDS) */
 /* ----------------------------------------- */
-
 section {
     background: rgba(255,255,255,0.95);
     padding: 25px;
@@ -122,10 +118,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* ----------------------------------------- */
 /* ABOUT SECTION */
-/* ----------------------------------------- */
-
 .about p {
     line-height: 1.6;
 }
@@ -133,7 +126,6 @@ section h2 {
 /* ----------------------------------------- */
 /* PROJECTS GRID */
 /* ----------------------------------------- */
-
 .project-grid {
     display: grid;
     gap: 15px;
@@ -146,7 +138,6 @@ section h2 {
     box-shadow: 0 4px 14px rgba(0,0,0,0.07);
     transition: 0.2s;
 }
-
 .project-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
@@ -155,12 +146,10 @@ section h2 {
 /* ----------------------------------------- */
 /* SKILLS SECTION */
 /* ----------------------------------------- */
-
 .skills ul {
     list-style: none;
     padding-left: 0;
 }
-
 .skills li {
     background: #e8f5ff;
     padding: 10px 14px;
@@ -171,11 +160,9 @@ section h2 {
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-
 /* ----------------------------------------- */
 /* CONTACT SOCIAL ICONS */
 /* ----------------------------------------- */
-
 .socials {
     display: flex;
     gap: 10px;
@@ -192,7 +179,6 @@ section h2 {
 /* ----------------------------------------- */
 /* COMMENT FORM */
 /* ----------------------------------------- */
-
 .comment-form input,
 .comment-form textarea {
     width: 100%;
@@ -211,7 +197,6 @@ section h2 {
 /* ----------------------------------------- */
 /* RESPONSIVE */
 /* ----------------------------------------- */
-
 @media (max-width: 900px) {
     .page-layout {
         flex-direction: column;

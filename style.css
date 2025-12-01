@@ -164,8 +164,15 @@ section h2 {
 /* CONTACT SOCIAL ICONS */
 /* ----------------------------------------- */
 .socials {
-    display: flex;
-    gap: 10px;
+  display: inline-flex;      /* or flex / block depending on layout */
+  gap: 8px;
+  padding: 8px 12px;
+  background: #ffffff;       /* change to match your design */
+  border-radius: 12px;       /* makes the box rounded */
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  align-items: center;
+  z-index: 10; 
 }
 
 .social {
@@ -173,7 +180,7 @@ section h2 {
     background: #dbeeff;
     height: 45px;
     border-radius: 14px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05)
 }
 
 /* ----------------------------------------- */

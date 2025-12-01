@@ -171,34 +171,6 @@ section h2 {
     box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-/* ----------------------------------------- */
-/* SIDEBAR CARDS */
-/* ----------------------------------------- */
-
-.side-box {
-    background: rgba(255,255,255,0.9);
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-}
-
-.side-box h2 {
-    margin-bottom: 10px;
-}
-
-.thumb {
-    background: #cde8ff;
-    width: 100%;
-    height: 150px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.side-box .btn.small {
-    padding: 7px 12px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-}
 
 /* ----------------------------------------- */
 /* CONTACT SOCIAL ICONS */

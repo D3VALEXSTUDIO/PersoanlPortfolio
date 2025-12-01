@@ -119,19 +119,7 @@ button, .btn {
     max-width: 700px;
 }
 
-.about-icons {
-    margin-top: 25px;
-    display: flex;
-    gap: 18px;
-}
 
-.icon {
-    width: 45px;
-    height: 45px;
-    background: #22004a;
-    border: 1px solid #442080;
-    border-radius: 8px;
-}
 
 /* ------------------------ */
 /* PROJECTS SECTION         */

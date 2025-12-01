@@ -1,226 +1,239 @@
-/* ------------------------ */
-/* GLOBAL PAGE SETTINGS     */
-/* ------------------------ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
 
 body {
+    margin: 0;
+    padding: 0;
+    background: #070012;
     font-family: Arial, sans-serif;
-    background: #09001a;
-    color: #ffffff;
-    line-height: 1.5;
+    color: #ddd;
 }
 
 h1, h2, h3 {
-    font-weight: 600;
+    margin: 0;
 }
 
-button, .btn {
-    cursor: pointer;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* ------------------------ */
-/* HERO SECTION             */
-/* ------------------------ */
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
 
 .hero {
-    width: 100%;
-    background: #12002b;
-    padding: 40px 0;
+    background: #0f0022;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }
 
 .hero-content {
-    width: 90%;
-    max-width: 1200px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .profile-circle {
-    width: 140px;
-    height: 140px;
-    border: 3px solid #7a2cff;
+    width: 120px;
+    height: 120px;
+    background: #22004a;
     border-radius: 50%;
-    flex-shrink: 0;
+    border: 2px solid #442080;
 }
 
 .hero-text h1 {
     font-size: 32px;
 }
 
-.hero-text span {
-    color: #a26cff;
-}
-
 .hero-text p {
+    font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 15px;
-    color: #c3b6ff;
 }
 
 .btn {
     display: inline-block;
-    background: #7a2cff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #22004a;
+    border: 1px solid #442080;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .btn.small {
-    padding: 8px 15px;
-    font-size: 14px;
+    padding: 7px 14px;
 }
 
-/* ------------------------ */
-/* MAIN PAGE LAYOUT         */
-/* ------------------------ */
+/* ------------------------------
+   PAGE LAYOUT
+------------------------------ */
 
 .page-layout {
-    width: 90%;
-    max-width: 1300px;
-    margin: 40px auto;
     display: flex;
-    gap: 35px;
-    align-items: flex-start;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    gap: 25px;
 }
 
 .left {
-    flex: 3;
+    width: 70%;
 }
 
 .sidebar {
-    flex: 1.1;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    width: 30%;
 }
 
-/* ------------------------ */
-/* ABOUT SECTION            */
-/* ------------------------ */
+/* ------------------------------
+   ABOUT ME
+------------------------------ */
 
-.about h2,
-.projects h2,
-.comments h2 {
+.about {
+    background: #0d001f;
+    border: 1px solid #24104a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.about h2 {
     margin-bottom: 12px;
-    color: #c9a5ff;
+    font-size: 22px;
 }
 
-.about p {
-    max-width: 700px;
-}
-
-
-
-/* ------------------------ */
-/* PROJECTS SECTION         */
-/* ------------------------ */
+/* ------------------------------
+   PROJECTS (API PANEL)
+------------------------------ */
 
 .projects {
-    margin-top: 50px;
+    background: #0d001f;
+    border: 1px solid #24104a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 .project-grid {
-    margin-top: 20px;
+    margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
 }
 
 .project-card {
-    background: #160033;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.thumbnail {
-    width: 100%;
-    height: 120px;
-    background: #28154f;
+    background: #22004a;
+    border: 1px solid #442080;
+    padding: 15px;
     border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 10px;
 }
 
-/* ------------------------ */
-/* SIDEBAR BOXES            */
-/* ------------------------ */
+/* ------------------------------
+   ⭐ SKILLS (NEW SECTION)
+------------------------------ */
+
+.skills {
+    background: #0d001f;
+    border: 1px solid #24104a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.skills h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list li {
+    padding: 10px 18px;
+    background: #22004a;
+    border: 1px solid #442080;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+/* ------------------------------
+   COMMENT SECTION
+------------------------------ */
+
+.comments {
+    background: #0d001f;
+    border: 1px solid #24104a;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #140028;
+    border: 1px solid #442080;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/* ------------------------------
+   SIDEBAR
+------------------------------ */
 
 .side-box {
-    background: #160033;
+    background: #0d001f;
+    border: 1px solid #24104a;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin-bottom: 25px;
 }
 
-.side-box h2 {
-    color: #c9a5ff;
-    margin-bottom: 15px;
+.thumb {
+    width: 100%;
+    background: #22004a;
+    border: 1px solid #442080;
+    border-radius: 8px;
 }
 
 .thumb.tall {
-    width: 100%;
-    height: 150px;
-    background: #28154f;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    height: 180px;
 }
-
-/* ------------------------ */
-/* SOCIAL ICONS             */
-/* ------------------------ */
 
 .socials {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .social {
     width: 40px;
     height: 40px;
-    background: #26004f;
-    border-radius: 50%;
-    border: 1px solid #522f96;
-}
-
-/* ------------------------ */
-/* COMMENT SECTION          */
-/* ------------------------ */
-
-.comments {
-    margin-top: 50px;
-}
-
-.comment-form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 450px;
-}
-
-.comment-form input,
-.comment-form textarea {
-    background: #1e003c;
-    border: 1px solid #4e2588;
-    padding: 10px;
+    background: #22004a;
+    border: 1px solid #442080;
     border-radius: 8px;
-    color: #fff;
-    font-size: 15px;
 }
 
-.comment-form textarea {
-    resize: vertical;
-    height: 120px;
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 900px) {
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .left, .sidebar {
+        width: 100%;
+    }
 }
